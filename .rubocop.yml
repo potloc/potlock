@@ -29,3 +29,4 @@ Style/Documentation:
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*.rb"
+    - "potlock.gemspec"
