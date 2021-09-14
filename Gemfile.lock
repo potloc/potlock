@@ -56,7 +56,6 @@ DEPENDENCIES
   potlock!
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 1.7)
   rubocop-rspec (~> 2.4)
 
 BUNDLED WITH
