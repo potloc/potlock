@@ -1,11 +1,13 @@
 name: Rubocop
 on:
   push:
+    branches:
+      - main
     paths-ignore:
-      - "**.md"
+      - '**/**.md'
   pull_request:
     paths-ignore:
-      - "**.md"
+      - '**/**.md'
 jobs:
   build:
     runs-on: ubuntu-latest
