@@ -14,6 +14,9 @@
 <img src="https://github.com/POTLOC/potlock/actions/workflows/rspec.yml/badge.svg?branch=main" alt="RSpec tests" />
 </a>
 
+<a href="https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml">
+<img src="https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml/badge.svg?branch=main" alt="Rubocop" />
+</a>
 
 # Potlock - Distributed Read-Write lock using redis
 
