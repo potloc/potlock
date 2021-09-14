@@ -1,13 +1,5 @@
 name: RSpec tests
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**/**.md'
-  pull_request:
-    paths-ignore:
-      - '**/**.md'
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
