@@ -1,3 +1,20 @@
+<a href="LICENSE">
+<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Potlock is released under the MIT license." />
+</a>
+
+<a href="CODE_OF_CONDUCT.md">
+<img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg" alt="The code of conduct of Potlock." />
+</a>
+
+<a href="CONTRIBUTING.md">
+<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+</a>
+
+<a href="https://github.com/POTLOC/potlock/actions/workflows/rspec.yml">
+<img src="https://github.com/POTLOC/potlock/actions/workflows/rspec.yml/badge.svg?branch=main" alt="RSpec tests" />
+</a>
+
+
 # Potlock - Distributed Read-Write lock using redis
 
 Potlock is redis-based concurrent read-write lock distributed across processes.
