@@ -12,10 +12,9 @@ module Potlock
     attr_accessor :retry_delay
 
     def initialize
-      @redis_host = ENV["DEFAULT_REDIS_HOST"] || "localhost"
-      @redis_port = ENV["DEFAULT_REDIS_PORT"] || "6379"
-      @redis_db   = ENV["DEFAULT_REDIS_DB"]   || "1"
-
+      @redis_host = "localhost"
+      @redis_port = "6379"
+      @redis_db   = "1"
       @retry_count = 25
       @retry_delay = 200
     end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "potlock"
+require "mock_redis"
 require "redlock/testing"
 
 RSpec.configure do |config|
@@ -16,5 +17,8 @@ RSpec.configure do |config|
 
   config.before(:each) do
     Redlock::Client.testing_mode = :bypass
+
+    redis_instance = MockRedis.new
+    allow(Redis).to receive_message_chain(:new).and_return(redis_instance)
   end
 end

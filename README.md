@@ -65,7 +65,7 @@ end
 
 ### Redis client configuration
 
-By default, `Potlock` will use Redis `redis://localhost:6379`. There's options you can use to change this default behaviour:
+By default, `Potlock` will use Redis `redis://localhost:6379/1`. There's options you can use to change this default behaviour:
 
 ```ruby
 Potlock.configure do |config|
@@ -75,12 +75,6 @@ Potlock.configure do |config|
 end
 ```
 
-You can also change Redis client configuration using environments variables:
-```ruby
-ENV["DEFAULT_REDIS_HOST"] = "redis"
-ENV["DEFAULT_REDIS_PORT"] = "6380"
-ENV["DEFAULT_REDIS_DB"] = "2"
-```
 ### Potlock configuration
 
 It's possible to customize the retry logic providing the following options:

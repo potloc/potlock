@@ -32,7 +32,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "redlock", "~> 1.2"
 
+  spec.add_development_dependency "mock_redis", "~> 0.2"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rubocop", "~> 1.7"
   spec.add_development_dependency "rubocop-rspec", "~> 2.4"
 end
