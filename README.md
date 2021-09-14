@@ -1,24 +1,9 @@
-<a href="LICENSE">
-<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Potlock is released under the MIT license." />
-</a>
-
-<a href="CODE_OF_CONDUCT.md">
-<img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg" alt="The code of conduct of Potlock." />
-</a>
-
-<a href="CONTRIBUTING.md">
-<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-</a>
-
-<a href="https://github.com/POTLOC/potlock/actions/workflows/rspec.yml">
-<img src="https://github.com/POTLOC/potlock/actions/workflows/rspec.yml/badge.svg?branch=main" alt="RSpec tests" />
-</a>
-
-<a href="https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml">
-<img src="https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml/badge.svg?branch=main" alt="Rubocop" />
-</a>
-
-<a href="https://badge.fury.io/rb/potlock"><img src="https://badge.fury.io/rb/potlock.svg" alt="Gem Version" height="18"></a>
+[![Potlock is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![The code of conduct of Potlock.](https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg)](CODE_OF_CONDUCT.md)
+[![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![RSpec tests](https://github.com/POTLOC/potlock/actions/workflows/rspec.yml/badge.svg)](https://github.com/POTLOC/potlock/actions/workflows/rspec.yml)
+[![Rubocop](https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml/badge.svg)](https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml)
+[![Gem Version](https://badge.fury.io/rb/potlock.svg)](https://badge.fury.io/rb/potlock)
 
 # Potlock - Distributed Read-Write lock using redis
 
@@ -27,11 +12,6 @@ Potlock is redis-based concurrent read-write lock distributed across processes.
 Allows only one concurrent reader or writer. And if the lock is taken, any readers or writers who come along will have to wait.
 
 Highly relying on https://github.com/leandromoreira/redlock-rb.
-
-_Interested in what we do at [Potloc](https://jobs.lever.co/Potloc)? Come join us! We are hiring 🚀_
-
-<a href="https://jobs.lever.co/Potloc">
-<img src="https://www.potloc.com/hubfs/raw_assets/public/Potloc_February2021/images/potloc-logo-5887eaeeeb6a65da7d364097a7edee175590aed00ec877d1c6c64ea955a51a5f.svg" alt="Potloc" width="236" height="54"></a>
 
 ## Compatibility
 
@@ -125,3 +105,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the Potlock project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/POTLOC/potlock/blob/main/CODE_OF_CONDUCT.md).
+
+## We are hiring 🚀
+Interested in what we do at [Potloc](https://jobs.lever.co/Potloc)? Come join us! We are hiring 🚀
+
+<a href="https://jobs.lever.co/Potloc">
+    <img src="https://www.potloc.com/hubfs/raw_assets/public/Potloc_February2021/images/potloc-logo-5887eaeeeb6a65da7d364097a7edee175590aed00ec877d1c6c64ea955a51a5f.svg" alt="Potloc" width="236" height="54">
+</a>
