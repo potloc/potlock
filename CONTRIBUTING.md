@@ -1,31 +1,23 @@
-We love pull requests from everyone. By participating in this project, you agree
-to abide by the Potloc [code of conduct].
+# Contributing to Potloc
 
-[code of conduct]: https://github.com/POTLOC/potlock/blob/main/CODE_OF_CONDUCT.md
+🎉 First off, thanks for taking the time to contribute! 🎉
 
-1. Fork the repo.
+The following is a set of guidelines for contributing to Potloc and its packages, which are hosted in the [Potloc Organization](https://github.com/POTLOC) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
-2. Run `./bin/setup`.
+## Code of Conduct
 
-3. Run the tests. We only take pull requests with passing tests, and it's great
-   to know that you have a clean slate: `bundle exec rspec`
+This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [dev@potloc.com](mailto:dev@potloc.com).
 
-4. Add a test for your change. Only refactoring and documentation changes
-   require no new tests. If you are adding functionality or fixing a
-   bug, we need a test!
+## How Can I Contribute?
 
-5. Make the test pass.
+### Report a bug
 
-6. Push to your fork and submit a pull request.
+TODO: Add description on how to report a bug and add a GitHub template.
 
-At this point you're waiting on us. We like to at least comment on, if not
-accept, pull requests within three business days (and, typically, one business
-day). We may suggest some changes or improvements or alternatives.
+### Submit a suggestion
 
-Some things that will increase the chance that your pull request is accepted,
-taken straight from the Ruby on Rails guide:
+TODO: Add description on how to submit a suggestion and add a GitHub template.
 
-* Use Rails idioms and helpers
-* Include tests that fail without your code, and pass with it
-* Update the documentation, the surrounding one, examples elsewhere, guides,
-  whatever is affected by your contribution
+### Open a pull request
+
+TODO: Add description on how to open a pull request and add a GitHub template.
