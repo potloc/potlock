@@ -18,6 +18,8 @@
 <img src="https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml/badge.svg?branch=main" alt="Rubocop" />
 </a>
 
+<a href="https://badge.fury.io/rb/potlock"><img src="https://badge.fury.io/rb/potlock.svg" alt="Gem Version" height="18"></a>
+
 # Potlock - Distributed Read-Write lock using redis
 
 Potlock is redis-based concurrent read-write lock distributed across processes.
