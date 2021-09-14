@@ -75,6 +75,12 @@ Potlock.configure do |config|
 end
 ```
 
+You can also change Redis client configuration using environments variables:
+```ruby
+ENV["DEFAULT_REDIS_HOST"] = "redis"
+ENV["DEFAULT_REDIS_PORT"] = "6380"
+ENV["DEFAULT_REDIS_DB"] = "2"
+```
 ### Potlock configuration
 
 It's possible to customize the retry logic providing the following options:
