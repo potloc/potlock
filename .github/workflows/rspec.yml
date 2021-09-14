@@ -18,5 +18,3 @@ jobs:
           bundler-cache: true
       - name: Run RSpec tests
         run: bundle exec rspec
-        env:
-          DEFAULT_REDIS_HOST: redis
