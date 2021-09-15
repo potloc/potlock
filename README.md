@@ -17,7 +17,7 @@ Highly relying on https://github.com/leandromoreira/redlock-rb.
 
 Potlock works with Redis versions 2.6 or later.
 
-## Installation
+## Getting started 🚀
 
 Add this line to your application's Gemfile:
 
@@ -38,14 +38,15 @@ Or install it yourself as:
 ### Initialize the lock
 
 ```ruby
-lock = Potlock::Client.new(key: "redis_key")
+redis_key = "hello_world" # The Redis key you want to read or write
+lock = Potlock::Client.new(key: redis_key)
 ```
 There's a list of options you can pass as described [here](#redis-client-configuration).
 
 ### Get a value from Redis
 
 ```ruby
-# Will wait until all locks are freed before getting "redis_key".
+# Will wait until all locks are freed before getting the key "hello_world".
 value = lock.get
 ```
 
@@ -53,7 +54,7 @@ value = lock.get
 
 ```ruby
 lock.set do
-  # Execute this block and set the return value in "redis_key"
+  # Execute this block and set the return value in the key "hello_world"
 end
 ```
 
@@ -61,7 +62,7 @@ end
 
 ```ruby
 value = lock.fetch do
-  # Fetch "redis_key" on Redis or execute this block if not present
+  # Fetch the key "hello_world" in Redis or execute this block if not present
 end
 ```
 
@@ -94,7 +95,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-## Contributing
+## How to Contribute 🤝
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/POTLOC/potlock. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/POTLOC/potlock/blob/main/CODE_OF_CONDUCT.md).
 
@@ -105,10 +106,3 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the Potlock project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/POTLOC/potlock/blob/main/CODE_OF_CONDUCT.md).
-
-## We are hiring 🚀
-Interested in what we do at [Potloc](https://jobs.lever.co/Potloc)? Come join us! We are hiring 🚀
-
-<a href="https://jobs.lever.co/Potloc">
-    <img src="https://www.potloc.com/hubfs/raw_assets/public/Potloc_February2021/images/potloc-logo-5887eaeeeb6a65da7d364097a7edee175590aed00ec877d1c6c64ea955a51a5f.svg" alt="Potloc" width="236" height="54">
-</a>
