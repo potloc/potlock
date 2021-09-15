@@ -1,8 +1,8 @@
 [![Potlock is released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![The code of conduct of Potlock.](https://img.shields.io/badge/Contributor%20Covenant-2.1-blue.svg)](CODE_OF_CONDUCT.md)
 [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![RSpec tests](https://github.com/POTLOC/potlock/actions/workflows/rspec.yml/badge.svg)](https://github.com/POTLOC/potlock/actions/workflows/rspec.yml)
-[![Rubocop](https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml/badge.svg)](https://github.com/POTLOC/potlock/actions/workflows/rubocop.yml)
+[![RSpec tests](https://github.com/potloc/potlock/actions/workflows/rspec.yml/badge.svg)](https://github.com/potloc/potlock/actions/workflows/rspec.yml)
+[![Rubocop](https://github.com/potloc/potlock/actions/workflows/rubocop.yml/badge.svg)](https://github.com/potloc/potlock/actions/workflows/rubocop.yml)
 [![Gem Version](https://badge.fury.io/rb/potlock.svg)](https://badge.fury.io/rb/potlock)
 
 # Potlock - Distributed Read-Write lock using redis
@@ -97,7 +97,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## How to Contribute 🤝
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/POTLOC/potlock. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/POTLOC/potlock/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/potloc/potlock. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/potloc/potlock/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -105,4 +105,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Potlock project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/POTLOC/potlock/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Potlock project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/potloc/potlock/blob/main/CODE_OF_CONDUCT.md).

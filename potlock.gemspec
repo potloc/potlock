@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Distributed Read-Write lock using redis."
   spec.description   = "Potlock is redis based concurrent read-write lock distributed across processes."
-  spec.homepage      = "https://github.com/POTLOC/potlock"
+  spec.homepage      = "https://github.com/potloc/potlock"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
 
