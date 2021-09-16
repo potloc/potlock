@@ -66,6 +66,20 @@ value = lock.fetch do
 end
 ```
 
+### Errors handling
+
+In case of the lock can't get acquired, an exception is raised:
+
+```ruby
+begin
+  lock.set do
+    # critical code
+  end
+rescue Potlock::LockError
+  # error handling
+end
+```
+
 ### Redis client configuration
 
 By default, `Potlock` will use Redis `redis://localhost:6379/1`. There's options you can use to change this default behaviour:
