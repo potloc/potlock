@@ -37,7 +37,7 @@ module Potlock
     private
 
     def lock!(&block)
-      lock_manager.lock!(lock_key, Potlock.configuration.retry_delay, &block)
+      lock_manager.lock!(lock_key, retry_delay, &block)
     end
 
     def lock_manager
@@ -50,6 +50,10 @@ module Potlock
           retry_delay: Potlock.configuration.retry_delay,
         },
       )
+    end
+
+    def retry_delay
+      Potlock.configuration.retry_delay * Potlock.configuration.retry_count
     end
 
     def redis
