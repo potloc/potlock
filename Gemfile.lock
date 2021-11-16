@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    potlock (0.1.2)
+    potlock (0.2.0)
       redlock (~> 1.2)
 
 GEM
@@ -16,8 +16,8 @@ GEM
       ast (~> 2.4.1)
     rainbow (3.0.0)
     rake (13.0.6)
-    redis (4.5.1)
-    redlock (1.2.2)
+    redis (4.4.0)
+    redlock (1.2.1)
       redis (>= 3.0.0, < 5.0)
     regexp_parser (2.1.1)
     rexml (3.2.5)
