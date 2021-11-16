@@ -1,5 +1,6 @@
 ## [0.1.2] - 2021-11-16
 
+- f3fe257 Bump version to 0.1.2
 - dc73659 Setter returns passed value
 
 ## [0.1.1] - 2021-09-29
