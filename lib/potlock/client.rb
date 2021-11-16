@@ -30,6 +30,7 @@ module Potlock
     def set(&block)
       value = lock!(&block)
       redis.set(key, value)
+      value
     rescue Redlock::LockError => _e
       raise Potlock::LockError
     end
