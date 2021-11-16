@@ -1,5 +1,6 @@
-## [0.1.2] - 2021-11-16
+## [0.2.0] - 2021-11-16
 
+- 1faf6da Bump version to 0.2.0
 - f3fe257 Bump version to 0.1.2
 - dc73659 Setter returns passed value
 
