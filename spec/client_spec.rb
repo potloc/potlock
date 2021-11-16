@@ -65,6 +65,10 @@ RSpec.describe Potlock::Client do
   end
 
   describe "#set" do
+    it "returns the passed value" do
+      expect(subject.set { "RESPONSE" }).to eq("RESPONSE")
+    end
+
     context "given a free lock" do
       it "stores value in Redis" do
         expect(redis.get(key)).to be_nil

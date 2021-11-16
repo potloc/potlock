@@ -1,4 +1,10 @@
-## [0.1.0] - 2021-09-29
+## [0.2.0] - 2021-11-16
+
+- 1faf6da Bump version to 0.2.0
+- f3fe257 Bump version to 0.1.2
+- dc73659 Setter returns passed value
+
+## [0.1.1] - 2021-09-29
 
 - ebbcda8 Update Gemfile.lock
 - d07268d Bump version
