@@ -13,11 +13,13 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/potloc/potlock"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
-
-  spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  spec.metadata["changelog_uri"] = "#{spec.homepage}/CHANGELOG.md"
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata = {
+    "allowed_push_host" => "https://rubygems.org",
+    "changelog_uri" => "#{spec.homepage}/blob/main/CHANGELOG.md",
+    "homepage_uri" => spec.homepage,
+    "rubygems_mfa_required" => "true",
+    "source_code_uri" => spec.homepage,
+  }
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
