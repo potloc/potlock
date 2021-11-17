@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    potlock (0.2.0)
+    potlock (0.2.1)
       redlock (~> 1.2)
 
 GEM
