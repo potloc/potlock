@@ -1,3 +1,9 @@
+## [0.2.1] - 2021-11-17
+
+- 327bffe Bump version to 0.2.1
+- 992aa0d Update potlock.gemspec
+- 0f3dc42 Update Gemfile.lock
+
 ## [0.2.0] - 2021-11-16
 
 - 1faf6da Bump version to 0.2.0
