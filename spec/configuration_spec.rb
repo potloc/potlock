@@ -3,6 +3,14 @@
 RSpec.describe Potlock::Configuration do
   subject { described_class.new }
 
+  describe "redis" do
+    context "when no redis is specified" do
+      it "defaults to nil" do
+        expect(subject.redis).to be_nil
+      end
+    end
+  end
+
   describe "redis_host" do
     context "when no redis_host is specified" do
       it "defaults to Redis hostname" do
