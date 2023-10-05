@@ -58,6 +58,8 @@ module Potlock
     end
 
     def redis
+      return Potlock.configuration.redis unless Potlock.configuration.redis.nil?
+
       @redis ||= Redis.new(
         host: Potlock.configuration.redis_host,
         db: Potlock.configuration.redis_db,

@@ -89,6 +89,8 @@ Potlock.configure do |config|
   config.redis_host = "localhost"
   config.redis_port = "6379"
   config.redis_db   = "1"
+  # or
+  # config.redis = Redis.new(host: "localhost", port: 6379, db: 1)
 end
 ```
 
