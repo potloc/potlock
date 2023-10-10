@@ -1,3 +1,8 @@
+## [0.3.0] - 2023-10-10
+
+- 9ab3405 Add support for redis client option
+- cefd13c Bump Redlock from ~1.2 to ~1.3
+
 ## [0.2.1] - 2021-11-17
 
 - 327bffe Bump version to 0.2.1
