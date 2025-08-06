@@ -28,8 +28,8 @@ module Potlock
       raise Potlock::LockError
     end
 
-    def set(&block)
-      value = lock!(&block)
+    def set(&)
+      value = lock!(&)
       store_value!(value)
       value
     rescue Redlock::LockError => _e
@@ -43,8 +43,8 @@ module Potlock
       redis.expire(key, expires_in) unless expires_in.nil?
     end
 
-    def lock!(&block)
-      lock_manager.lock!(lock_key, retry_delay, &block)
+    def lock!(&)
+      lock_manager.lock!(lock_key, retry_delay, &)
     end
 
     def lock_manager
