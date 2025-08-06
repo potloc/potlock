@@ -28,17 +28,19 @@ module Potlock
     end
 
     def set(&block)
-      value = lock!(&block)
-      redis.set(key, value)
-      value
+      lock! do
+        value = block.call
+        redis.set(key, value)
+        value
+      end
     rescue Redlock::LockError => _e
       raise Potlock::LockError
     end
 
     private
 
-    def lock!(&block)
-      lock_manager.lock!(lock_key, retry_delay, &block)
+    def lock!(&)
+      lock_manager.lock!(lock_key, retry_delay, &)
     end
 
     def lock_manager
