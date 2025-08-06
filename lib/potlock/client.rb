@@ -2,11 +2,12 @@
 
 module Potlock
   class Client
-    attr_accessor :key, :lock_key
+    attr_accessor :key, :lock_key, :expires_in
 
-    def initialize(key:)
+    def initialize(key:, expires_in: nil)
       @key = key
       @lock_key = "#{key}_lock"
+      @expires_in = expires_in
     end
 
     def fetch
@@ -14,7 +15,7 @@ module Potlock
         return redis.get(key) if redis.exists?(key)
 
         value = yield
-        redis.set(key, value)
+        store_value!(value)
         value
       end
     rescue Redlock::LockError => _e
@@ -29,13 +30,18 @@ module Potlock
 
     def set(&block)
       value = lock!(&block)
-      redis.set(key, value)
+      store_value!(value)
       value
     rescue Redlock::LockError => _e
       raise Potlock::LockError
     end
 
     private
+
+    def store_value!(value)
+      redis.set(key, value)
+      redis.expire(key, expires_in) unless expires_in.nil?
+    end
 
     def lock!(&block)
       lock_manager.lock!(lock_key, retry_delay, &block)
