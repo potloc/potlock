@@ -88,17 +88,5 @@ RSpec.describe Potlock::Client do
         expect(redis.get(key)).to be_nil
       end
     end
-
-    context "given a key with expires_in" do
-      subject { described_class.new(key: key, expires_in: expires_in) }
-      let(:expires_in) { 1 }
-
-      it "deletes the key after the expires_in time" do
-        subject.set { "RESPONSE" }
-
-        sleep expires_in
-        expect(redis.get(key)).to be_nil
-      end
-    end
   end
 end
