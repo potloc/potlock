@@ -28,10 +28,12 @@ module Potlock
       raise Potlock::LockError
     end
 
-    def set(&)
-      value = lock!(&)
-      store_value!(value)
-      value
+    def set(&block)
+      lock! do
+        value = block.call
+        store_value!(value)
+        value
+      end
     rescue Redlock::LockError => _e
       raise Potlock::LockError
     end
